@@ -43,7 +43,7 @@ int main() {
 		return 1;
 	}
 
-	std::cout << "Server is listening on port 8000...\n";
+	std::cout << "Server is listening on port 8080...\n";
 
 	//wait for connection
 	sockaddr_in client;
@@ -94,14 +94,12 @@ int main() {
 
 	}
 
-	
 
 	//cleanup
 	closesocket(clientSocket);
 	closesocket(listening);
 	WSACleanup();
 	return 0;
-
 
 
 }
